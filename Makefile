@@ -17,7 +17,7 @@ dev-run:
 	docker run --rm -e APP_MODE=dev practice:prod
 push:
 	@echo "Pushing prod image with tag $(TAG)"
-	docker push $(DOCKER_USERNAME)/practice:$(TAG)
-	docker push $(DOCKER_USERNAME)/practice:latest
+	docker push $(DOCKER_USER)/practice:$(TAG)
+	docker push $(DOCKER_USER)/practice:latest
 clean:
 	docker system prune -af
