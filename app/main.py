@@ -1,9 +1,7 @@
-"""
-Docstring for app.main
-"""
+"""Main application to print the mode based on APP_MODE environment variable."""
 import os
 
-"""main function"""
+"""Print whether the app is running in DEV or PROD mode based on APP_MODE."""
 def main():
     mode = os.environ.get("APP_MODE", "prod")
     if mode == "dev":
