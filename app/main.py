@@ -9,6 +9,6 @@ def main():
         print("Running in DEV mode")
     else:
         print("Running in PROD mode")
- 
+
 if __name__ == "__main__":
     main()
